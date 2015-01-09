@@ -1,0 +1,8 @@
+[package]
+
+name = "skia"
+version = "0.0.1"
+authors = ["Richard Diamond <wichard@vitalitystudios.com>"]
+description = "Rust idiomatic bindings to Google's Skia. This is currently a placeholder."
+repository = "https://github.com/DiamondLovesYou/skia-rs.git"
+license = "MPL-2.0"
