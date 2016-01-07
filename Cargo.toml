@@ -8,46 +8,34 @@ repository = "https://github.com/DiamondLovesYou/skia-rs.git"
 license = "MPL-2.0"
 
 [dependencies]
-skia-sys = "0.20130412.3"
+skia-sys = "0.20130412"
 euclid = "0.4"
-gleam = "0.1"
+gleam = "0.2"
 libc = "0.2"
-servo-glutin = "0.4"
-expat-sys = "2.1.0"
-
+glutin = "0.4"
+glium = "0.13"
 
 [target.i686-unknown-linux-gnu.dependencies]
-servo-fontconfig = "0.2"
-servo-freetype-sys = "2.4.11"
 x11 = { version = "2.0.0", features = ["xlib"] }
 glx = "0.1.0"
-
 [target.x86_64-unknown-linux-gnu.dependencies]
-servo-fontconfig = "0.2"
-servo-freetype-sys = "2.4.11"
 x11 = { version = "2.0.0", features = ["xlib"] }
 glx = "0.1.0"
-
 [target.arm-unknown-linux-gnueabihf.dependencies]
-servo-fontconfig = "0.2"
-servo-freetype-sys = "2.4.11"
 x11 = { version = "2.0.0", features = ["xlib"] }
 glx = "0.1.0"
-
 [target.aarch64-unknown-linux-gnu.dependencies]
-servo-fontconfig = "0.2"
-servo-freetype-sys = "2.4.11"
 x11 = { version = "2.0.0", features = ["xlib"] }
 glx = "0.1.0"
 
 [target.arm-linux-androideabi.dependencies]
-servo-fontconfig = "0.2"
-servo-freetype-sys = "2.4.11"
 servo-egl = "0.2"
-
-[target.x86_64-pc-windows-gnu.dependencies]
-servo-fontconfig = "0.2"
-servo-freetype-sys = "2.4.11"
+[target.aarch64-linux-android.dependencies]
+servo-egl = "0.2"
+[target.i686-linux-android.dependencies]
+servo-egl = "0.2"
+[target.x86_64-linux-android.dependencies]
+servo-egl = "0.2"
 
 [target.x86_64-apple-darwin.dependencies]
 cgl = "0.1"
